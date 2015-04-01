@@ -1,2 +1,4 @@
 # xerite_v2.5_google
-esXeritə
+esXəritə
+Elgiz Soltanov
+2015.03.23
