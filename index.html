@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/esScript.js"></script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/esStyle.css" rel="stylesheet" type="text/css" />
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>esXerite</title>
+</head>
+<body>
+
+<div>
+<div id="map-canvas" onmousemove="mapDivClicked(event);"></div>
+</div>  
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">esXerite</span>
+        <span class="sr-only">esXerite</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo_es">esXəritə</div>
+    </div>
+    
+
+    <div  class="collapse navbar-form navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="navbar-left">
+        <input class="form-control input-sm" id="gndr_u" type="text" value="40.76822" placeholder="Ufiqi koordinant"/>
+        <input class="form-control input-sm" id="gndr_s" type="text" value="46.9945" placeholder="Saquli koordinant"/>
+        <input class="form-control input-sm" id="gndr_i" type="text" value="ES" placeholder="Melumat"/>
+        <input type="button" onclick="initialize()" value="Tap" class="form-control btn-success btn-sm" />
+         <span id="koor_gor_x"></span>
+         <span id="koor_gor_y"></span>
+        </div>
+      <div class="navbar-right">
+       <input onclick="getCoords()" type="button" value="Mənim Yerim" class="form-control btn-info btn-sm" />
+      </div>
+      
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+</body>
+</html>
